@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>this is a table</title>
+        <style>
+            th,td{
+            border:1px dashed black;
+            border-collapse: collapse;
+            padding: 10px;
+            text-align: center; 
+            }
+            table{
+                border:3px solid green;
+                border-collapse: collapse;
+                margin: 100px;
+                
+            }
+           
+        </style>  
+    </head>
+    <body>
+        <table id="demo" style="width:45%;background-color: white;">
+            <caption style="padding: 10px;">fav food</caption>
+            <colgroup>
+                <col style=" background-color: orangered;">
+                <col style=" background-color: wheat;">
+                <col style="background-color: green;">
+            </colgroup>
+            <thead>
+            <tr id="change">
+                <th>name</th>
+                <th>food</th>
+                <th>place</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td style="background-color:white ;">usha</td>
+                <td >ice-cream</td>
+                <td style="background-color: yellowgreen;">cream walls</td>
+            </tr>
+            <tr>
+                <td style="background-color: violet;">shiva</td>
+                <td >chocolate</td>
+                <td style="background-color: yellow;">india</td>
+            </tr>
+            <tr>
+                <td style="background-color: rgb(46, 190, 176);">janu</td>
+                <td>juice</td>
+                <td style="background-color: grey;">tenali</td>
+            </tr>
+            </tbody>
+        </table>
+        <script>
+            var x=document.getElementById("demo");
+            var y=document.getElementById("change");
+        </script>
+    </body>
+</html>
