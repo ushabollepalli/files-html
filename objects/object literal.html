@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<script>
+var person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+document.write(person.firstName + " is " + person.age + " years old."+"<br>");
+document.write(person.fullName());
+</script>
+
+</body>
+</html>

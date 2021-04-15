@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<script>
+function Person(first, last, age) {
+  this.firstname = first;
+  this.lastname = last;
+  this.age = age;
+  
+}
+
+Person.prototype.nationality = "English";
+Person.prototype.place="guntur";
+Person.prototype.name=function(){
+return this.firstname+" "+this.lastname;};
+
+var x = new Person("John", "Doe", 50);
+document.write(x.nationality); 
+</script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<script>
+var person = {
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+var person1 = {
+  firstName:"John",
+  lastName: "Doe"
+}
+var person2 = {
+  firstName:"Mary",
+  lastName: "Doe"
+}
+var x = person.fullName.call(person1); 
+document.write(x); 
+</script>
+
+</body>
+</html>
+
+

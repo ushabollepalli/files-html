@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>  
+ 
+function Bike(company)  
+{  
+    this.company=company;   
+}  
+
+function Vehicle(name,price) {  
+ this.name=name;  
+  this.price=price;  
+  } 
+  
+Bike.prototype.id="89";  
+  
+var x = new Bike("Honda"); 
+ 
+Vehicle.prototype=x;  
+
+var y=new Vehicle("Shine",70000); 
+ 
+document.write(y.name+" "+y.company);  
+
+</script>
+</body>
+</html>
